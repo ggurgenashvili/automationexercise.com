@@ -40,10 +40,10 @@ describe('register user on automationexercise.com', () => {
         cy.get('[data-qa="continue-button"]').click()
 
 
-        //now delete created account
-        cy.wait(4000)
-        cy.get('li').contains(' Delete Account').click()
-        cy.get('[data-qa="continue-button"]').click()
+        // //now delete created account
+        // cy.wait(4000)
+        // cy.get('li').contains(' Delete Account').click()
+        // cy.get('[data-qa="continue-button"]').click()
 
 
 
