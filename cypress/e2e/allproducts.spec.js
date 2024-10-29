@@ -64,5 +64,22 @@ describe('Verify All Products and product detail page', () => {
 
 
     })
+    it('search product ', () => {
+        cy.get('li').contains(' Products').click()
+        cy.get('[placeholder="Search Product"]').type('blue')
+        cy.get('[id="submit_search"]').click()
+    })
+
+    it.only('click and choose category ', () => {
+        cy.get('li').contains(' Products').click()
+
+        cy.wait(4000)
+        cy.get('.panel-group').find('a').contains('Women').click()
+        cy.get('.panel-group').find('a').contains('Tops ').should('be.visible').click()
+
+
+
+
+    })
 
 })
