@@ -51,6 +51,31 @@ describe('API testing with cypress', () => {
         })
 
     })
+    // it.only('post to search product', () => {
+    //     cy.api({
+    //         method: 'POST',
+    //         url: 'https://automationexercise.com/api/productsList',
+    //         body: {
+    //             search: 'Tshirts'  // Search parameter
+    //         },
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         failOnStatusCode: true
+    //     }).then((response) => {
+    //         cy.log('response status:', response.status)
+    //         expect(response.status).to.be.oneOf([200, 405])
+    //         if(response.status === 200){
+    //             cy.log('just a test')
+    //         }else if(response.status === 405){
+    //             cy.log('this method is not supported')
+    //         }
+    //
+    //     })
+    // })
+    //
+    //
+
 
 
     it('Get User Detail by Email', () => {
